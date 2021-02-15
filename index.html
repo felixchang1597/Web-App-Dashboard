@@ -12,24 +12,23 @@
 
 <body>
     <main>
-
-        <div class="header-bar">
-            <h2>Your App™</h2>
-            <img src="icons/icon-bell.svg" class="icon-bell" alt="bell">
-            <div id="notifier">
-                <div class="notify-menu">
-                    <div class="notify-menu-content">
-                        <p>You have one new message.</p>
-                        <p>You have graph updates.</p>
+        <div class="grid-container">
+            <div class="header-bar">
+                <h2>Your App™</h2>
+                <img src="icons/icon-bell.svg" class="icon-bell" alt="bell">
+                <div id="notifier">
+                    <div class="notify-menu">
+                        <div class="notify-menu-content">
+                            <p>You have one new message.</p>
+                            <p>You have graph updates.</p>
+                        </div>
                     </div>
                 </div>
+                <span class="pipe">&#124;</span>
+                <img src="images/member-1.jpg" alt="member1" class="member-pic">
+                <p class="user">Person 1</p>
             </div>
-            <span class="pipe">&#124;</span>
-            <img src="images/member-1.jpg" alt="member1" class="member-pic">
-            <p class="user">Person 1</p>
-        </div>
 
-        <div class="container">
             <nav class="navbar">
                 <a href="#dashboard-top">
                     <svg class="icons" version="1.1" id="dashboard-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
@@ -96,7 +95,7 @@
                 </a>
             </nav>
 
-            <div id="dashboard-top" class="main-content">
+            <div id="dashboard" class="main-content">
                 <div class="dashboard-search">
                     <div class="box">
                         <h1>Dashboard</h1>
@@ -128,7 +127,7 @@
 
                 </div>
 
-                <div class="graphs-container">
+                <div class="graphs-container-1">
                     <div class="widget-container" id="daily-traffic-widget-container">
                         <h3 class="widget-name">Daily Traffic</h3>
                         <canvas id="daily-traffic-widget" width="400" height="225"></canvas>
@@ -143,7 +142,7 @@
                 <div class="widget-container" id="social-stats">
                     <h3 class="widget-name">Social Stats</h3>
 
-                    <div class="flex-social-container">
+                    <div class="grid-social-container">
                         <div class="social-container" id="twitter">
                             <div class="circle">
                                 <svg class="social-icon" version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
@@ -201,46 +200,13 @@
 
                         </div>
 
-                        <div class="social-container" id="LinkedIn">
-                            <div class="circle">
-                                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="linkedin-icon" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;"
-                                    xml:space="preserve">
-                                <g>
-                                    <path  d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707   c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21   v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824   C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463   c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z    M5.477,420.56h92.184v-277.32H5.477V420.56z" fill="#FFFFFF"/>
-                                </g>
-        
-                                </svg>
 
-                            </div>
-                            <div class="social-group">
-                                <span class="social-name">LinkedIn</span><br />
-                                <span class="social-counter">1,768</span>
-                            </div>
-
-                        </div>
-
-                        <div class="social-container" id="pinterest">
-                            <div class="circle">
-                                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="pinterest-icon" x="0px" y="0px" viewBox="0 0 100.001 100.001" style="enable-background:new 0 0 100.001 100.001;" xml:space="preserve"
-                                    width="512px" height="512px">
-                                        <g>
-                                            <path d="M43.081,66.14c-2.626,13.767-5.833,26.966-15.333,33.861c-2.932-20.809,4.307-36.436,7.668-53.027   c-5.73-9.646,0.689-29.062,12.777-24.277c14.873,5.885-12.881,35.865,5.75,39.611c19.453,3.908,27.395-33.752,15.332-46   C51.847-1.376,18.542,15.905,22.638,41.224c0.996,6.191,7.391,8.068,2.555,16.611c-11.154-2.473-14.484-11.27-14.055-23   c0.69-19.197,17.25-32.639,33.86-34.498c21.006-2.352,40.721,7.711,43.443,27.471c3.066,22.303-9.48,46.459-31.943,44.721   C50.41,72.056,47.853,69.04,43.081,66.14z" fill="#FFFFFF"/>
-                                        </g>
-                                    </svg>
-
-                            </div>
-                            <div class="social-group">
-                                <span class="social-name">Pinterest</span><br />
-                                <span class="social-counter">936</span>
-                            </div>
-
-                        </div>
 
                     </div>
 
                 </div>
 
-                <div class="graphs-container">
+                <div class="graphs-container-2">
                     <div class="widget-container" id="new-member-container">
                         <h3 class="widget-name">New Members</h3>
 
@@ -301,10 +267,8 @@
                         <ul id="member-activity-list">
 
                             <li class="member">
-                                <img class="member-avatar" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
-                                <img class="activity-icon" src="icons/like.svg" alt="" />
-
-                                <div class="member-info">
+                                <img class="member-avatar-2" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
+                                <div class="member-info-2">
                                     <span class="member-name">Jane Doe </span>
                                     <span class="activity-time">4 hours ago</span>
                                 </div>
@@ -312,10 +276,8 @@
                             </li>
 
                             <li class="member">
-                                <img class="member-avatar" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
-                                <img class="activity-icon" src="icons/like.svg" alt="" />
-
-                                <div class="member-info">
+                                <img class="member-avatar-2" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
+                                <div class="member-info-2">
                                     <span class="member-name">Jane Doe<span class="member-activity"> posted YourApp's SEO Tips</span></span>
                                     <span class="activity-time">4 hours ago</span>
                                 </div>
@@ -323,10 +285,8 @@
                             </li>
 
                             <li class="member">
-                                <img class="member-avatar" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
-                                <img class="activity-icon" src="icons/like.svg" alt="" />
-
-                                <div class="member-info">
+                                <img class="member-avatar-2" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
+                                <div class="member-info-2">
                                     <span class="member-name">Jane Doe<span class="member-activity"> posted YourApp's SEO Tips</span></span>
                                     <span class="activity-time">4 hours ago</span>
                                 </div>
@@ -334,10 +294,8 @@
                             </li>
 
                             <li class="member">
-                                <img class="member-avatar" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
-                                <img class="activity-icon" src="/icon-settings.svg" alt="" />
-
-                                <div class="member-info">
+                                <img class="member-avatar-2" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
+                                <div class="member-info-2">
                                     <span class="member-name">Jane Doe<span class="member-activity"> posted YourApp's SEO Tips</span></span>
                                     <span class="activity-time">4 hours ago</span>
                                 </div>
@@ -345,10 +303,8 @@
                             </li>
 
                             <li class="member">
-                                <img class="member-avatar" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
-                                <img class="activity-icon" src="icons/like.svg" alt="" />
-
-                                <div class="member-info">
+                                <img class="member-avatar-2" src="http://www.radfaces.com/images/avatars/little-pete-wrigley.jpg" alt="" />
+                                <div class="member-info-2">
                                     <span class="member-name">Jane Doe<span class="member-activity"> posted YourApp's SEO Tips</span></span>
                                     <span class="activity-time">4 hours ago</span>
                                 </div>
@@ -358,7 +314,7 @@
                     </div>
                 </div>
 
-                <div class="graphs-container">
+                <div class="graphs-container-3">
                     <div class="widget-container" id="message-container">
                         <div id="dialog-sent">
                             <p>Your message has been sent!</p>
@@ -439,6 +395,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 
         </div>
     </main>
