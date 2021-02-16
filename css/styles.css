@@ -130,6 +130,19 @@ h2 {
     display: none;
 }
 
+.marker {
+    display: inline-block;
+    margin-right: 6px;
+    top: 17px;
+    right: 145px;
+    bottom: 35px;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 70px;
+    background: greenyellow;
+}
+
 .icon-bell:hover {
     transition: 1s;
     background-color: #3e8e41;
